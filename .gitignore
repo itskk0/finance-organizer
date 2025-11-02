@@ -1,0 +1,6 @@
+.env
+kk_key
+kk_key.pub
+__pycache__/
+*.pyc
+*.json
