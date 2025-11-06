@@ -193,18 +193,6 @@ The bot includes comprehensive logging. Check the console output for:
 - **Google Sheets API**: 100 requests per 100 seconds per user
 - **Telegram Bot API**: 30 messages per second
 
-## Next Steps
-
-This bot provides a solid foundation for financial tracking. You can extend it by:
-
-1. **Adding Database**: Store user data and bot state locally
-2. **Webhooks**: Use webhooks instead of polling for production
-3. **Admin Commands**: Add admin-only functionality for group management
-4. **Reports**: Generate financial reports and summaries
-5. **Multi-currency**: Support for multiple currencies and exchange rates
-6. **Recurring Transactions**: Handle subscription and recurring payments
-7. **Export Features**: Export data to CSV, PDF, or other formats
-
 ## License
 
 This project is open source and available under the MIT License.

@@ -1,5 +1,6 @@
 from typing import Dict, Any, List, Optional
-from datetime import datetime
+from datetime import datetime, timezone
+
 from google_sheets_manager import GoogleSheetsManager
 from config import Config
 
@@ -75,7 +76,7 @@ class TransactionProcessor:
             ]
             
             # Generate a full timestamp ID for the row and add to column L
-            row_id = datetime.now().strftime("%Y-%m-%d %H:%M:%S.%f")
+            row_id = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S.%f")
             # Add the transaction to the appropriate sheet
             success = self.sheets_manager.append_data(sheet_name, [row_data], date=date_cell, username=transaction_data.get("username", "Unknown"), id_value=row_id)
             
