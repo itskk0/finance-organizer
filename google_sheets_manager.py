@@ -233,7 +233,7 @@ class GoogleSheetsManager:
             data = self.read_data(sheet_name)
             for idx, row in enumerate(data, start=1):
                 # Check if column A (first cell) is empty or missing
-                if len(row) == 0 or row[0] == "" or row[0] is None:
+                if len(row) == 0 or row[4] == "" or row[4] is None:
                     return idx
             # If no empty cell found, return next row after last
             return len(data) + 1
